@@ -28,10 +28,16 @@ print("Consonants:",consonants)
 '''
 '''
 print("4.Remove Duplicate Character")
+string=input("Enter a string:")
+duplicate=""
+for ch in string:
+    if ch not in duplicate:
+        duplicate+=ch
+print(duplicate)
 '''
 '''
 print("5.First Non-Repeated Character")
-s = input("Enter a string: ")
+s=input("Enter a string: ")
 for ch in s:
     if s.count(ch) == 1:
         print("First non-repeated character:", ch)
@@ -54,4 +60,97 @@ if sorted(s1.lower()) == sorted(s2.lower()):
 else:
     print("Not Anagram")
 '''
+'''
 print("8.Replace spaces with hyphen")
+string=input("Enter a string:")
+print(string.replace(" ","-"))
+'''
+'''
+print("9.Count number of words")
+string=input("Enter a string:")
+string.split()
+print("Number of words:",len(string))
+'''
+'''
+print("10.Longest word in sentence")
+sentence=input("Enter a sentence:")
+words=sentence.split()
+longest=""
+for long_word in words:
+    if len(long_word)>len(longest):
+        longest=long_word
+print("Longest word:",longest)
+'''
+'''
+print("11.Capitalize first letter")
+string=input("Enter a string:")
+print(string.title())
+'''
+'''
+print("12.Remove special characters")
+string=input("Enter string:")
+result=""
+for chr in string:
+    if chr.isalnum():
+        result+=chr
+print(result)
+''' 
+'''
+print("13.Remove special characters")
+string=input("Enter a string:")
+upper=0
+lower=0
+for ch in string:
+    if ch.isupper():
+        upper+=1
+    elif ch.islower():
+        lower+=1
+print("Upper:",upper)
+print("Lower:",lower)
+'''
+'''
+print("14.Check whether string contains only digits")
+string=input("Enter string:")
+if string.isdigit():
+    print("Contains only digits")
+else:
+    print("Contains other characters")
+'''
+'''
+print("15.Most frequent character")
+string=input("Enter a string:")
+frequent=""
+count = 0
+for ch in string:
+    if string.count(ch) > count:
+        count=string.count(ch)
+        frequent= ch
+print("Most frequent character:", frequent)
+'''
+'''
+print("16.Replace whitespaces")
+string=input("Enter a string:")
+print(string.replace(" ",""))
+'''
+'''
+print("17.Count occurences of Sub string")
+string=input("Enter a string:")
+sub_string=input("Enter substring:")
+print(string.count(sub_string))
+'''
+'''
+print("18.Rotational string")
+string1=input("Enter str1:")
+string2=input("Enter str2:")
+if len(string1)==len(string2) and string2 in (string1+string1):
+    print("Rotational")
+else:
+    print("Not Rotational")
+'''
+'''
+print("19.Compress a string")
+'''
+'''
+print("20.Longest Repeating Substring")
+
+'''
