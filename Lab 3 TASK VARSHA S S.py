@@ -96,8 +96,20 @@ for i in range(1,num+1):
         sum_divisors+=i
 print("Sum of divisors=",sum_divisors)
 '''
-print("Loop 11.Armstrong number")
-n=input("Enter a number:")
+'''
+print("Loop 10.Palindrome")
+n=int(input("Enter a number:"))
+temp=n
+reverse=0
+while temp>0:
+    digits=temp%10
+    reverse=reverse*10+digits
+    temp=temp//10
+
+if reverse==n:
+    print(n,"Palindrome")
+else:
+    print(n,"Not a Palindrome")
 '''
 '''
 print("Loop 12.Pattern")
