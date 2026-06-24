@@ -1,4 +1,4 @@
-""""
+"""
 print("Letter pattern")
 for i in range(1,4):
     for j in range(1,6):
@@ -63,7 +63,7 @@ print("Loop 6.ASCII values")
 for i in range(0,128):
     print(chr(i),"=",i)
 """
-""""
+"""
 print("Loop 7. Convert while to for")
 m=5
 n=10
@@ -95,8 +95,8 @@ for i in range(1,num+1):
     if num%i==0:
         sum_divisors+=i
 print("Sum of divisors=",sum_divisors)
-'''
-'''
+"""
+"""
 print("Loop 10.Palindrome")
 n=int(input("Enter a number:"))
 temp=n
@@ -110,8 +110,24 @@ if reverse==n:
     print(n,"Palindrome")
 else:
     print(n,"Not a Palindrome")
-'''
-'''
+"""
+"""
+print("Loop 11.Armstrong number")
+n=int(input("Enter a number:"))
+temp=n
+sum=0
+while temp>0:
+    digits=temp%10
+    sum=sum+digits**digits
+    temp=temp//10
+
+if sum==n:
+    print(n,"Armstrong number")
+else:
+    print(n,"Not a Armstrong number")
+"""
+
+"""
 print("Loop 12.Pattern")
 for i in range(1,5):
     for j in range(i,6):
@@ -119,44 +135,44 @@ for i in range(1,5):
     for k in range(1,i):
         print("*",end="")
     print()
-'''
-'''
+"""
+"""
 for i in range(1,6):
     for j in range(i,6):
         print(" ",end="")
     for k in range(1,i):
         print("* ",end="")
     print()
-'''
-'''
+"""
+"""
 for i in range(1,6):
     for k in range(1,i):
         print("* ",end="")
     print()
-'''
-'''
+"""
+"""
 for i in range(1,6):
     for k in range(i,6):
         print("* ",end="")
     print()
-'''
-'''
+"""
+"""
 for i in range(1,6):
     for j in range(1,i):
         print(" ",end="")
     for k in range(i,6):
         print("* ",end="")
     print()
-'''
-'''
+"""
+"""
 for i in range(1,6):
     for j in range(1,i):
         print(" ",end="")
     for k in range(i,6):
         print("*",end="")
     print()
-'''
-'''
+"""
+"""
 for i in range(1,4):
     for j in range(i,4):
         print(" ",end="")
@@ -170,14 +186,14 @@ for i in range(2,0,-1):
     for k in range(i):
         print("* ",end="")
     print()
-'''
-'''
+"""
+"""
 for i in [1,2,3,2,1]:
     for j in range(i,4):
         print(" ",end="")
     for k in range(i):
         print("* ",end="")
     print()
-'''
+"""
 
 
